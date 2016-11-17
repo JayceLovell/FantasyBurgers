@@ -79,6 +79,12 @@ namespace FantasyBurgers.Models
         [Display(Name = "Confirm password")]
         [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
         public string ConfirmPassword { get; set; }
+
+        [Required(ErrorMessage = "Your must provide a PhoneNumber")]
+        [Display(Name = "Phone Number")]
+        [DataType(DataType.PhoneNumber)]
+        [RegularExpression(@"^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$", ErrorMessage = "Not a valid Phone number")]
+        public string PhoneNumber { get; set; }
     }
 
     public class ResetPasswordViewModel
