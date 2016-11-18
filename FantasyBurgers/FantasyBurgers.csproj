@@ -177,8 +177,15 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Appetizer.cs" />
+    <Compile Include="Models\Burger.cs" />
+    <Compile Include="Models\Combo.cs" />
+    <Compile Include="Models\Dessert.cs" />
+    <Compile Include="Models\Drink.cs" />
+    <Compile Include="Models\FantasyBurgerResturantContext.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Side.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
