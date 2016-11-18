@@ -201,6 +201,7 @@
     <Content Include="Content\Images\burgers02.JPG" />
     <Content Include="Content\Images\burgers03.JPG" />
     <Content Include="Content\Images\Burger_Brand_Logo.jpg" />
+    <Content Include="Content\Images\DefaultAppetizerImage.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -271,9 +272,7 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Appetizers\Create.cshtml" />
-    <Content Include="Views\Appetizers\Delete.cshtml" />
     <Content Include="Views\Appetizers\Details.cshtml" />
-    <Content Include="Views\Appetizers\Edit.cshtml" />
     <Content Include="Views\Appetizers\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>

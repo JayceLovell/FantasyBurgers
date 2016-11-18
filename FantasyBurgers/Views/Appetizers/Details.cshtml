@@ -19,14 +19,6 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.AppetizerShortDescription)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.AppetizerShortDescription)
-        </dd>
-
-        <dt>
             @Html.DisplayNameFor(model => model.AppetizerLongDescription)
         </dt>
 
@@ -41,18 +33,15 @@
         <dd>
             @Html.DisplayFor(model => model.AppetizerPrice)
         </dd>
-
         <dt>
             @Html.DisplayNameFor(model => model.AppetizerImage)
         </dt>
-
         <dd>
-            @Html.DisplayFor(model => model.AppetizerImage)
+            <img src="@Url.Content(Model.AppetizerImage)" />
         </dd>
 
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.AppetizerId }) |
     @Html.ActionLink("Back to List", "Index")
 </p>

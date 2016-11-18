@@ -18,13 +18,7 @@
             @Html.DisplayNameFor(model => model.AppetizerShortDescription)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.AppetizerLongDescription)
-        </th>
-        <th>
             @Html.DisplayNameFor(model => model.AppetizerPrice)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.AppetizerImage)
         </th>
         <th></th>
     </tr>
@@ -38,18 +32,10 @@
             @Html.DisplayFor(modelItem => item.AppetizerShortDescription)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.AppetizerLongDescription)
-        </td>
-        <td>
             @Html.DisplayFor(modelItem => item.AppetizerPrice)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.AppetizerImage)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.AppetizerId }) |
-            @Html.ActionLink("Details", "Details", new { id=item.AppetizerId }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.AppetizerId })
+            @Html.ActionLink("Details", "Details", new { id = item.AppetizerId }, new { @class="btn btn-success"})
         </td>
     </tr>
 }
