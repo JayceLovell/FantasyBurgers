@@ -172,7 +172,9 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AdminAppetizersController.cs" />
+    <Compile Include="Controllers\AdminBurgersController.cs" />
     <Compile Include="Controllers\AppetizersController.cs" />
+    <Compile Include="Controllers\BurgersController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
@@ -202,6 +204,7 @@
     <Content Include="Content\Images\burgers02.JPG" />
     <Content Include="Content\Images\burgers03.JPG" />
     <Content Include="Content\Images\Burger_Brand_Logo.jpg" />
+    <Content Include="Content\Images\DefaultBurgerImage.jpg" />
     <Content Include="Content\Images\DefaultAppetizerImage.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\fontawesome-webfont.svg" />
@@ -272,7 +275,6 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Appetizers\Create.cshtml" />
     <Content Include="Views\Appetizers\Details.cshtml" />
     <Content Include="Views\Appetizers\Index.cshtml" />
     <Content Include="Views\AdminAppetizers\Create.cshtml" />
@@ -280,6 +282,13 @@
     <Content Include="Views\AdminAppetizers\Details.cshtml" />
     <Content Include="Views\AdminAppetizers\Edit.cshtml" />
     <Content Include="Views\AdminAppetizers\Index.cshtml" />
+    <Content Include="Views\Burgers\Details.cshtml" />
+    <Content Include="Views\Burgers\Index.cshtml" />
+    <Content Include="Views\AdminBurgers\Create.cshtml" />
+    <Content Include="Views\AdminBurgers\Delete.cshtml" />
+    <Content Include="Views\AdminBurgers\Details.cshtml" />
+    <Content Include="Views\AdminBurgers\Edit.cshtml" />
+    <Content Include="Views\AdminBurgers\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

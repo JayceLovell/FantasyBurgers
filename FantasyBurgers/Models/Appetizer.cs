@@ -26,6 +26,7 @@ namespace FantasyBurgers.Models
 
         [Required]
         [Column(TypeName = "numeric")]
+        [Display(Name ="Price")]
         public decimal AppetizerPrice { get; set; }
 
         [Display(Name = "Display")]
