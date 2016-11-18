@@ -12,17 +12,24 @@ namespace FantasyBurgers.Models
 
         [Required]
         [StringLength(50)]
+        [Display(Name = "Name")]
         public string AppetizerName { get; set; }
 
         [Required]
         [StringLength(50)]
+        [Display(Name = "Description")]
         public string AppetizerShortDescription { get; set; }
 
+        [Display(Name = "Long Description")]
+        [ScaffoldColumn(false)]
         public string AppetizerLongDescription { get; set; }
 
+        [Required]
         [Column(TypeName = "numeric")]
         public decimal AppetizerPrice { get; set; }
 
+        [Display(Name = "Display")]
+        [ScaffoldColumn(false)]
         public string AppetizerImage { get; set; }
     }
 }
