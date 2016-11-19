@@ -171,9 +171,6 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
-    <Compile Include="Controllers\AdminAppetizersController.cs" />
-    <Compile Include="Controllers\AdminBurgersController.cs" />
-    <Compile Include="Controllers\AdminDessertsController.cs" />
     <Compile Include="Controllers\AppetizersController.cs" />
     <Compile Include="Controllers\BurgersController.cs" />
     <Compile Include="Controllers\DessertsController.cs" />
@@ -281,27 +278,20 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Appetizers\Details.cshtml" />
     <Content Include="Views\Appetizers\Index.cshtml" />
-    <Content Include="Views\AdminAppetizers\Create.cshtml" />
-    <Content Include="Views\AdminAppetizers\Delete.cshtml" />
-    <Content Include="Views\AdminAppetizers\Details.cshtml" />
-    <Content Include="Views\AdminAppetizers\Edit.cshtml" />
-    <Content Include="Views\AdminAppetizers\Index.cshtml" />
     <Content Include="Views\Burgers\Details.cshtml" />
     <Content Include="Views\Burgers\Index.cshtml" />
-    <Content Include="Views\AdminBurgers\Create.cshtml" />
-    <Content Include="Views\AdminBurgers\Delete.cshtml" />
-    <Content Include="Views\AdminBurgers\Details.cshtml" />
-    <Content Include="Views\AdminBurgers\Edit.cshtml" />
-    <Content Include="Views\AdminBurgers\Index.cshtml" />
     <Content Include="Views\Desserts\Details.cshtml" />
     <Content Include="Views\Desserts\Index.cshtml" />
-    <Content Include="Views\AdminDesserts\Create.cshtml" />
-    <Content Include="Views\AdminDesserts\Delete.cshtml" />
-    <Content Include="Views\AdminDesserts\Details.cshtml" />
-    <Content Include="Views\AdminDesserts\Edit.cshtml" />
-    <Content Include="Views\AdminDesserts\Index.cshtml" />
     <Content Include="Views\Drinks\Details.cshtml" />
     <Content Include="Views\Drinks\Index.cshtml" />
+    <Content Include="Views\Drinks\Admin.cshtml" />
+    <Content Include="Views\Drinks\Create.cshtml" />
+    <Content Include="Views\Drinks\Edit.cshtml" />
+    <Content Include="Views\Drinks\Delete.cshtml" />
+    <Content Include="Views\Appetizers\Admin.cshtml" />
+    <Content Include="Views\Appetizers\Create.cshtml" />
+    <Content Include="Views\Appetizers\Edit.cshtml" />
+    <Content Include="Views\Appetizers\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

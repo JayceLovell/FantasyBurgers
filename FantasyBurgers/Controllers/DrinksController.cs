@@ -19,6 +19,11 @@ namespace FantasyBurgers.Controllers
         {
             return View(db.Drink.ToList());
         }
+        //Get: Admin
+        public ActionResult Admin()
+        {
+            return View(db.Drink.ToList());
+        }
 
         // GET: Drinks/Details/5
         public ActionResult Details(int? id)
