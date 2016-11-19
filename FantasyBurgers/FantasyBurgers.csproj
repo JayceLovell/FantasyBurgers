@@ -292,6 +292,10 @@
     <Content Include="Views\Appetizers\Create.cshtml" />
     <Content Include="Views\Appetizers\Edit.cshtml" />
     <Content Include="Views\Appetizers\Delete.cshtml" />
+    <Content Include="Views\Burgers\Create.cshtml" />
+    <Content Include="Views\Burgers\Edit.cshtml" />
+    <Content Include="Views\Burgers\Admin.cshtml" />
+    <Content Include="Views\Burgers\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
