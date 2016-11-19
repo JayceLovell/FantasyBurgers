@@ -173,8 +173,11 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AdminAppetizersController.cs" />
     <Compile Include="Controllers\AdminBurgersController.cs" />
+    <Compile Include="Controllers\AdminDessertsController.cs" />
     <Compile Include="Controllers\AppetizersController.cs" />
     <Compile Include="Controllers\BurgersController.cs" />
+    <Compile Include="Controllers\DessertsController.cs" />
+    <Compile Include="Controllers\DrinksController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
@@ -186,7 +189,7 @@
     <Compile Include="Models\Combo.cs" />
     <Compile Include="Models\Dessert.cs" />
     <Compile Include="Models\Drink.cs" />
-    <Compile Include="Models\FantasyBurgerResturantContext.cs" />
+    <Compile Include="Models\FantasyBurgersContext.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Side.cs" />
@@ -204,6 +207,7 @@
     <Content Include="Content\Images\burgers02.JPG" />
     <Content Include="Content\Images\burgers03.JPG" />
     <Content Include="Content\Images\Burger_Brand_Logo.jpg" />
+    <Content Include="Content\Images\DefaultDessertImage.jpg" />
     <Content Include="Content\Images\DefaultBurgerImage.jpg" />
     <Content Include="Content\Images\DefaultAppetizerImage.jpg" />
     <Content Include="favicon.ico" />
@@ -289,6 +293,15 @@
     <Content Include="Views\AdminBurgers\Details.cshtml" />
     <Content Include="Views\AdminBurgers\Edit.cshtml" />
     <Content Include="Views\AdminBurgers\Index.cshtml" />
+    <Content Include="Views\Desserts\Details.cshtml" />
+    <Content Include="Views\Desserts\Index.cshtml" />
+    <Content Include="Views\AdminDesserts\Create.cshtml" />
+    <Content Include="Views\AdminDesserts\Delete.cshtml" />
+    <Content Include="Views\AdminDesserts\Details.cshtml" />
+    <Content Include="Views\AdminDesserts\Edit.cshtml" />
+    <Content Include="Views\AdminDesserts\Index.cshtml" />
+    <Content Include="Views\Drinks\Details.cshtml" />
+    <Content Include="Views\Drinks\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

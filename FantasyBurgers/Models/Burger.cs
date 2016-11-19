@@ -11,7 +11,7 @@ namespace FantasyBurgers.Models
         public int BurgerId { get; set; }
 
         [Required]
-        [Display(Name = "Burger")]
+        [Display(Name = "Name")]
         public string BurgerName { get; set; }
 
         [Required]
@@ -19,12 +19,12 @@ namespace FantasyBurgers.Models
         [Display(Name = "Description")]
         public string BurgerShortDescription { get; set; }
 
-        [Display(Name = "Description")]
+        [Display(Name = "Detailed Description")]
         [ScaffoldColumn(false)]
         public string BurgerLongDescription { get; set; }
 
-        [Display(Name = "Price")]
         [Column(TypeName = "numeric")]
+        [Display(Name = "Price")]
         public decimal BurgerPrice { get; set; }
 
         [Display(Name = "Display")]

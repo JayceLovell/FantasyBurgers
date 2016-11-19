@@ -10,29 +10,29 @@ using FantasyBurgers.Models;
 
 namespace FantasyBurgers.Controllers
 {
-    public class BurgersController : Controller
+    public class DessertsController : Controller
     {
         private FantasyBurgersContext db = new FantasyBurgersContext();
 
-        // GET: Burgers
+        // GET: Desserts
         public ActionResult Index()
         {
-            return View(db.Burgers.ToList());
+            return View(db.Desserts.ToList());
         }
 
-        // GET: Burgers/Details/5
+        // GET: Desserts/Details/5
         public ActionResult Details(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Burger burger = db.Burgers.Find(id);
-            if (burger == null)
+            Dessert dessert = db.Desserts.Find(id);
+            if (dessert == null)
             {
                 return HttpNotFound();
             }
-            return View(burger);
+            return View(dessert);
         }
     }
 }

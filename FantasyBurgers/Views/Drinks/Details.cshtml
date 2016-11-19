@@ -1,0 +1,49 @@
+﻿@model FantasyBurgers.Models.Drink
+
+@{
+    ViewBag.Title = "Drink Detail";
+}
+
+<h2>Drink Detail</h2>
+
+<div>
+    <h4>Drink</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Drink1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Drink1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DrinkLongDescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DrinkLongDescription)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DrinkPrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DrinkPrice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DrinkImage)
+        </dt>
+
+        <dd>
+            <img src="@Url.Content(Model.DrinkImage)" />
+        </dd>
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.DrinkId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

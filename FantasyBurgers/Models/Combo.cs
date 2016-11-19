@@ -9,25 +9,28 @@ namespace FantasyBurgers.Models
     [Table("Combos")]
     public partial class Combo
     {
-        [Key]
-        [Column(Order = 0)]
         public int ComboId { get; set; }
 
-        [Key]
-        [Column(Order = 1)]
+        [Required]
+        [Display(Name ="Name")]
         public string ComboName { get; set; }
 
-        [Key]
-        [Column(Order = 2)]
+        [Required]
         [StringLength(25)]
+        [Display(Name = "Description")]
         public string ComboShortDescription { get; set; }
 
+        [Display(Name ="Detailed Description")]
+        [ScaffoldColumn(false)]
         public string ComboLongDescription { get; set; }
 
-        [Key]
-        [Column(Order = 3, TypeName = "numeric")]
+        [Required]
+        [Column(TypeName = "numeric")]
+        [Display(Name ="Price")]
         public decimal ComboPrice { get; set; }
 
+        [Display(Name = "Display")]
+        [ScaffoldColumn(false)]
         public string ComboImage { get; set; }
     }
 }

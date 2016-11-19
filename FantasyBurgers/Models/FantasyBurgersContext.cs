@@ -5,19 +5,19 @@ namespace FantasyBurgers.Models
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Linq;
 
-    public partial class FantasyBurgerResturantContext : DbContext
+    public partial class FantasyBurgersContext : DbContext
     {
-        public FantasyBurgerResturantContext()
-            : base("name=FantasyBurgerResturantConnectionString")
+        public FantasyBurgersContext()
+            : base("name=FantasyBurgersConnectionString")
         {
         }
 
         public virtual DbSet<Appetizer> Appetizers { get; set; }
         public virtual DbSet<Burger> Burgers { get; set; }
-        public virtual DbSet<Dessert> Desserts { get; set; }
-        public virtual DbSet<Drink> Drinks { get; set; }
-        public virtual DbSet<Side> Sides { get; set; }
         public virtual DbSet<Combo> Combos { get; set; }
+        public virtual DbSet<Dessert> Desserts { get; set; }
+        public virtual DbSet<Drink> Drink { get; set; }
+        public virtual DbSet<Side> Sides { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -27,6 +27,10 @@ namespace FantasyBurgers.Models
 
             modelBuilder.Entity<Burger>()
                 .Property(e => e.BurgerPrice)
+                .HasPrecision(10, 2);
+
+            modelBuilder.Entity<Combo>()
+                .Property(e => e.ComboPrice)
                 .HasPrecision(10, 2);
 
             modelBuilder.Entity<Dessert>()
@@ -39,10 +43,6 @@ namespace FantasyBurgers.Models
 
             modelBuilder.Entity<Side>()
                 .Property(e => e.SidePrice)
-                .HasPrecision(10, 2);
-
-            modelBuilder.Entity<Combo>()
-                .Property(e => e.ComboPrice)
                 .HasPrecision(10, 2);
         }
     }

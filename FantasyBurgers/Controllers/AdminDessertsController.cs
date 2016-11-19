@@ -10,107 +10,107 @@ using FantasyBurgers.Models;
 
 namespace FantasyBurgers.Controllers
 {
-    public class AdminAppetizersController : Controller
+    public class AdminDessertsController : Controller
     {
         private FantasyBurgersContext db = new FantasyBurgersContext();
 
-        // GET: AdminAppetizers
+        // GET: AdminDesserts
         public ActionResult Index()
         {
-            return View(db.Appetizers.ToList());
+            return View(db.Desserts.ToList());
         }
 
-        // GET: AdminAppetizers/Details/5
+        // GET: AdminDesserts/Details/5
         public ActionResult Details(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Appetizer appetizer = db.Appetizers.Find(id);
-            if (appetizer == null)
+            Dessert dessert = db.Desserts.Find(id);
+            if (dessert == null)
             {
                 return HttpNotFound();
             }
-            return View(appetizer);
+            return View(dessert);
         }
 
-        // GET: AdminAppetizers/Create
+        // GET: AdminDesserts/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: AdminAppetizers/Create
+        // POST: AdminDesserts/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "AppetizerId,AppetizerName,AppetizerShortDescription,AppetizerLongDescription,AppetizerPrice,AppetizerImage")] Appetizer appetizer)
+        public ActionResult Create([Bind(Include = "DessertId,DessertName,DessertShortDescription,DessertLongDescription,DessertPrice,DessertImage")] Dessert dessert)
         {
             if (ModelState.IsValid)
             {
-                db.Appetizers.Add(appetizer);
+                db.Desserts.Add(dessert);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
 
-            return View(appetizer);
+            return View(dessert);
         }
 
-        // GET: AdminAppetizers/Edit/5
+        // GET: AdminDesserts/Edit/5
         public ActionResult Edit(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Appetizer appetizer = db.Appetizers.Find(id);
-            if (appetizer == null)
+            Dessert dessert = db.Desserts.Find(id);
+            if (dessert == null)
             {
                 return HttpNotFound();
             }
-            return View(appetizer);
+            return View(dessert);
         }
 
-        // POST: AdminAppetizers/Edit/5
+        // POST: AdminDesserts/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "AppetizerId,AppetizerName,AppetizerShortDescription,AppetizerLongDescription,AppetizerPrice,AppetizerImage")] Appetizer appetizer)
+        public ActionResult Edit([Bind(Include = "DessertId,DessertName,DessertShortDescription,DessertLongDescription,DessertPrice,DessertImage")] Dessert dessert)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(appetizer).State = EntityState.Modified;
+                db.Entry(dessert).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            return View(appetizer);
+            return View(dessert);
         }
 
-        // GET: AdminAppetizers/Delete/5
+        // GET: AdminDesserts/Delete/5
         public ActionResult Delete(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Appetizer appetizer = db.Appetizers.Find(id);
-            if (appetizer == null)
+            Dessert dessert = db.Desserts.Find(id);
+            if (dessert == null)
             {
                 return HttpNotFound();
             }
-            return View(appetizer);
+            return View(dessert);
         }
 
-        // POST: AdminAppetizers/Delete/5
+        // POST: AdminDesserts/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            Appetizer appetizer = db.Appetizers.Find(id);
-            db.Appetizers.Remove(appetizer);
+            Dessert dessert = db.Desserts.Find(id);
+            db.Desserts.Remove(dessert);
             db.SaveChanges();
             return RedirectToAction("Index");
         }

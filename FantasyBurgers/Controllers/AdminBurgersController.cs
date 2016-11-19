@@ -12,7 +12,7 @@ namespace FantasyBurgers.Controllers
 {
     public class AdminBurgersController : Controller
     {
-        private FantasyBurgerResturantContext db = new FantasyBurgerResturantContext();
+        private FantasyBurgersContext db = new FantasyBurgersContext();
 
         // GET: AdminBurgers
         public ActionResult Index()
