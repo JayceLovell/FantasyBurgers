@@ -1,0 +1,48 @@
+﻿@model FantasyBurgers.Models.Combo
+
+@{
+    ViewBag.Title = "Combo Details";
+}
+
+<h2>Combo Details</h2>
+
+<div>
+    <h4>Combo</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ComboName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ComboName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ComboLongDescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ComboLongDescription)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ComboPrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ComboPrice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ComboImage)
+        </dt>
+
+        <dd>
+            <img src="@Url.Content(Model.ComboImage)" />
+        </dd>
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Back to List", "Admin")
+</p>

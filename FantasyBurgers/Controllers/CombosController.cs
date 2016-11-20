@@ -10,113 +10,112 @@ using FantasyBurgers.Models;
 
 namespace FantasyBurgers.Controllers
 {
-    public class DessertsController : Controller
+    public class CombosController : Controller
     {
         private FantasyBurgersContext db = new FantasyBurgersContext();
 
-        // GET: Desserts
+        // GET: Combos
         public ActionResult Index()
         {
-            return View(db.Desserts.ToList());
+            return View(db.Combos.ToList());
         }
 
-        //Get:Desserts/Admin
+        //Get: Combos/Admin
         public ActionResult Admin()
         {
-            return View(db.Desserts.ToList());
+            return View(db.Combos.ToList());
         }
-
-        // GET: Desserts/Details/5
+        // GET: Combos/Details/5
         public ActionResult Details(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Dessert dessert = db.Desserts.Find(id);
-            if (dessert == null)
+            Combo combo = db.Combos.Find(id);
+            if (combo == null)
             {
                 return HttpNotFound();
             }
-            return View(dessert);
+            return View(combo);
         }
 
-        // GET: AdminDesserts/Create
+        // GET: Combos/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: AdminDesserts/Create
+        // POST: Combos/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "DessertId,DessertName,DessertShortDescription,DessertLongDescription,DessertPrice,DessertImage")] Dessert dessert)
+        public ActionResult Create([Bind(Include = "ComboId,ComboName,ComboShortDescription,ComboLongDescription,ComboPrice,ComboImage")] Combo combo)
         {
             if (ModelState.IsValid)
             {
-                db.Desserts.Add(dessert);
+                db.Combos.Add(combo);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
 
-            return View(dessert);
+            return View(combo);
         }
 
-        // GET: AdminDesserts/Edit/5
+        // GET: Combos/Edit/5
         public ActionResult Edit(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Dessert dessert = db.Desserts.Find(id);
-            if (dessert == null)
+            Combo combo = db.Combos.Find(id);
+            if (combo == null)
             {
                 return HttpNotFound();
             }
-            return View(dessert);
+            return View(combo);
         }
 
-        // POST: AdminDesserts/Edit/5
+        // POST: Combos/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "DessertId,DessertName,DessertShortDescription,DessertLongDescription,DessertPrice,DessertImage")] Dessert dessert)
+        public ActionResult Edit([Bind(Include = "ComboId,ComboName,ComboShortDescription,ComboLongDescription,ComboPrice,ComboImage")] Combo combo)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(dessert).State = EntityState.Modified;
+                db.Entry(combo).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            return View(dessert);
+            return View(combo);
         }
 
-        // GET: AdminDesserts/Delete/5
+        // GET: Combos/Delete/5
         public ActionResult Delete(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Dessert dessert = db.Desserts.Find(id);
-            if (dessert == null)
+            Combo combo = db.Combos.Find(id);
+            if (combo == null)
             {
                 return HttpNotFound();
             }
-            return View(dessert);
+            return View(combo);
         }
 
-        // POST: AdminDesserts/Delete/5
+        // POST: Combos/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            Dessert dessert = db.Desserts.Find(id);
-            db.Desserts.Remove(dessert);
+            Combo combo = db.Combos.Find(id);
+            db.Combos.Remove(combo);
             db.SaveChanges();
             return RedirectToAction("Index");
         }

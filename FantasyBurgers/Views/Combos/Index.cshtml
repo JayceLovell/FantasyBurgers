@@ -1,0 +1,39 @@
+﻿@model IEnumerable<FantasyBurgers.Models.Combo>
+
+@{
+    ViewBag.Title = "Combos";
+}
+
+<h2>Combos</h2>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ComboName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ComboShortDescription)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ComboPrice)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ComboName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ComboShortDescription)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ComboPrice)
+        </td>
+        <td>
+            @Html.ActionLink("Details", "Details", new { id=item.ComboId })
+        </td>
+    </tr>
+}
+
+</table>

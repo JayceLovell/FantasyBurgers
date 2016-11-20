@@ -173,6 +173,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AppetizersController.cs" />
     <Compile Include="Controllers\BurgersController.cs" />
+    <Compile Include="Controllers\CombosController.cs" />
     <Compile Include="Controllers\DessertsController.cs" />
     <Compile Include="Controllers\DrinksController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -296,6 +297,16 @@
     <Content Include="Views\Burgers\Edit.cshtml" />
     <Content Include="Views\Burgers\Admin.cshtml" />
     <Content Include="Views\Burgers\Delete.cshtml" />
+    <Content Include="Views\Desserts\Create.cshtml" />
+    <Content Include="Views\Desserts\Edit.cshtml" />
+    <Content Include="Views\Desserts\Delete.cshtml" />
+    <Content Include="Views\Desserts\Admin.cshtml" />
+    <Content Include="Views\Combos\Create.cshtml" />
+    <Content Include="Views\Combos\Delete.cshtml" />
+    <Content Include="Views\Combos\Details.cshtml" />
+    <Content Include="Views\Combos\Edit.cshtml" />
+    <Content Include="Views\Combos\Index.cshtml" />
+    <Content Include="Views\Combos\Admin.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
