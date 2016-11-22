@@ -209,6 +209,9 @@
     <Content Include="Content\Images\DefaultDessertImage.jpg" />
     <Content Include="Content\Images\DefaultBurgerImage.jpg" />
     <Content Include="Content\Images\DefaultAppetizerImage.jpg" />
+    <Content Include="Content\Images\HotChocolate.jpg" />
+    <Content Include="Content\Images\IceTea.jpg" />
+    <Content Include="Content\Images\KaleSmoothie.jpg" />
     <Content Include="Content\Images\StrawberryYoghurt.jpg" />
     <Content Include="Content\Images\sweetBalls.jpg" />
     <Content Include="favicon.ico" />
