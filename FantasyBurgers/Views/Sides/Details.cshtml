@@ -1,0 +1,46 @@
+﻿@model FantasyBurgers.Models.Side
+
+@{
+    ViewBag.Title = "Side Details";
+}
+
+<h2>Side Details</h2>
+
+<div>
+    <h4>Side</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.SideName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SideName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SideLongDescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SideLongDescription)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SidePrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SidePrice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SideImage)
+        </dt>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.SideId }) |
+    @Html.ActionLink("Back to List", "Admin")
+</p>

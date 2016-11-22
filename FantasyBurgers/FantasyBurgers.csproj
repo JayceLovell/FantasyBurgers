@@ -178,6 +178,7 @@
     <Compile Include="Controllers\DrinksController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\SidesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -313,6 +314,12 @@
     <Content Include="Views\Combos\Edit.cshtml" />
     <Content Include="Views\Combos\Index.cshtml" />
     <Content Include="Views\Combos\Admin.cshtml" />
+    <Content Include="Views\Sides\Create.cshtml" />
+    <Content Include="Views\Sides\Delete.cshtml" />
+    <Content Include="Views\Sides\Details.cshtml" />
+    <Content Include="Views\Sides\Edit.cshtml" />
+    <Content Include="Views\Sides\Index.cshtml" />
+    <Content Include="Views\Sides\Admin.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
