@@ -201,6 +201,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
+    <Content Include="Content\Images\BlueBerrySmoothie.jpg" />
     <Content Include="Content\Images\burgers01.JPG" />
     <Content Include="Content\Images\burgers02.JPG" />
     <Content Include="Content\Images\burgers03.JPG" />
@@ -208,6 +209,8 @@
     <Content Include="Content\Images\DefaultDessertImage.jpg" />
     <Content Include="Content\Images\DefaultBurgerImage.jpg" />
     <Content Include="Content\Images\DefaultAppetizerImage.jpg" />
+    <Content Include="Content\Images\StrawberryYoghurt.jpg" />
+    <Content Include="Content\Images\sweetBalls.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
