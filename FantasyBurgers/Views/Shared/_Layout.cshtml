@@ -12,31 +12,70 @@ Authors: Sahil & Waynell Lovell
 
 </head>
 <body>
-
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="~/Views/Home/Index.cshtml" style="padding-top:1px;">
-                    <img alt="Brand" src="~/Content/Images/Burger_Brand_Logo.jpg">
-                </a>
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Fantasy Burgers", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                </ul>
-                @Html.Partial("_LoginPartial")
+    <div class="bannercontainer">
+        <div class="navbar navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                        <li>@Html.ActionLink("About", "About", "Home")</li>
+                        <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    </ul>
+                    @Html.Partial("_LoginPartial")
+                </div>
             </div>
         </div>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img style="height:300px; width:100%" src="~/Content/Images/burgers01.JPG" />
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+
+                <div class="item ">
+                    <img style="height:300px; width:100%" src="~/Content/Images/burgers02.JPG" />
+                    <div class="carousel-caption">
+                        <p>Fantasy Burgers</p>
+                    </div>
+                </div>
+
+                <div class="item ">
+                    <img style="height:300px; width:100%" src="~/Content/Images/burgers03.JPG" />
+                    <div class="carousel-caption">
+                        <p>Fantasy Burgers</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <a class="left carousel-control" href="#mycarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+
+            </a>
+
+            <a class="right carousel-control" href="#mycarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
     </div>
-    <div class="container body-content">
+    <div class="container body-content" style="margin-top:300px;">
         @RenderBody()
         <hr />
         <footer>

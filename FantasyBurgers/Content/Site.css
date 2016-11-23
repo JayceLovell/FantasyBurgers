@@ -22,3 +22,21 @@ select,
 textarea {
     max-width: 280px;
 }
+.navbar {
+   position:absolute;
+   background-color: transparent;
+   background: transparent;
+   border-color: transparent;
+   z-index:10;
+}
+.nav.navbar-nav li a{
+    color:saddlebrown;
+}
+.bannerContainer {
+    position: relative;
+    height: 400px;
+}
+.carousel {
+    position: absolute;
+    top: 0px;
+}
