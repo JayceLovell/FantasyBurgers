@@ -1,6 +1,8 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+    background-image:url(Images/background.jpg);
+    background-repeat:repeat;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -39,4 +41,8 @@ textarea {
 .carousel {
     position: absolute;
     top: 0px;
+}
+.nav.navbar-nav li a:hover{
+    background-color:black;
+    color:white;
 }
