@@ -39,6 +39,7 @@ textarea {
     top: 0px;
     padding-left: 130px;
     padding-right: 130px;
+    width:100%;
 }
 .nav.navbar-nav li a:hover{
     background-color:black;
@@ -49,4 +50,11 @@ textarea {
     border:thin;
     border-bottom-left-radius:5px;
     border-bottom-right-radius:5px;
+}
+.dropdown-menu{
+    background: rgba(128, 128, 128, 0.55)
+}
+img{
+    max-width:500px;
+    width:50%;
 }

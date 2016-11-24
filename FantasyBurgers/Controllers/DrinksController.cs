@@ -20,6 +20,7 @@ namespace FantasyBurgers.Controllers
             return View(db.Drink.ToList());
         }
         //Get: Admin
+        [Authorize(Roles = "Admin")]
         public ActionResult Admin()
         {
             return View(db.Drink.ToList());
@@ -41,6 +42,7 @@ namespace FantasyBurgers.Controllers
         }
 
         // GET: Drinks/Create
+        [Authorize(Roles = "Admin")]
         public ActionResult Create()
         {
             return View();
@@ -49,6 +51,7 @@ namespace FantasyBurgers.Controllers
         // POST: Drinks/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
+        [Authorize(Roles = "Admin")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "DrinkId,Drink1,DrinkShortDescription,DrinkLongDescription,DrinkPrice,DrinkImage")] Drink drink)
@@ -64,6 +67,7 @@ namespace FantasyBurgers.Controllers
         }
 
         // GET: Drinks/Edit/5
+        [Authorize(Roles = "Admin")]
         public ActionResult Edit(int? id)
         {
             if (id == null)
@@ -81,6 +85,7 @@ namespace FantasyBurgers.Controllers
         // POST: Drinks/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
+        [Authorize(Roles = "Admin")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Edit([Bind(Include = "DrinkId,Drink1,DrinkShortDescription,DrinkLongDescription,DrinkPrice,DrinkImage")] Drink drink)
@@ -95,6 +100,7 @@ namespace FantasyBurgers.Controllers
         }
 
         // GET: Drinks/Delete/5
+        [Authorize(Roles = "Admin")]
         public ActionResult Delete(int? id)
         {
             if (id == null)
@@ -110,6 +116,7 @@ namespace FantasyBurgers.Controllers
         }
 
         // POST: Drinks/Delete/5
+        [Authorize(Roles = "Admin")]
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
@@ -119,7 +126,7 @@ namespace FantasyBurgers.Controllers
             db.SaveChanges();
             return RedirectToAction("Index");
         }
-
+        [Authorize(Roles = "Admin")]
         protected override void Dispose(bool disposing)
         {
             if (disposing)
