@@ -1,3 +1,11 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
+<div class="jumbotron">
+    <div class="container">
+        <h1>Hello, Try Out Our Burgers!</h1>
+        <img src="~/Content/Images/OriginalBurger.jpg" alt="Fantasy Original Burger" class="img-rounded">
+        @Html.ActionLink("Click Here","Burgers", "Details", new { id = 1}, new { @class = "btn btn-primary btn-lg"))
+        <p><a class="btn btn-primary btn-lg" href= role="button">Learn more</a></p>
+</div>
+</div>

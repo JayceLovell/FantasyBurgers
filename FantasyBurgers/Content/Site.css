@@ -26,23 +26,27 @@ textarea {
 }
 .navbar {
    position:absolute;
-   background-color: transparent;
-   background: transparent;
+   background: rgba(128, 128, 128, 0.55);
    border-color: transparent;
    z-index:10;
 }
-.nav.navbar-nav li a{
-    color:saddlebrown;
-}
-.bannerContainer {
-    position: relative;
-    height: 400px;
+.nav.navbar-nav li a,footer{
+    color:white;
+    font-size:larger;
 }
 .carousel {
     position: absolute;
     top: 0px;
+    padding-left: 130px;
+    padding-right: 130px;
 }
 .nav.navbar-nav li a:hover{
     background-color:black;
     color:white;
+}
+.body-content{
+    background-color:rgba(128, 128, 128, 0.45);
+    border:thin;
+    border-bottom-left-radius:5px;
+    border-bottom-right-radius:5px;
 }
