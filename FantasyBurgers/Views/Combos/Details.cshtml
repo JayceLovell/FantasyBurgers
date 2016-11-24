@@ -34,12 +34,8 @@
             @Html.DisplayFor(model => model.ComboPrice)
         </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.ComboImage)
-        </dt>
-
         <dd>
-            <img src="@Url.Content(Model.ComboImage)" />
+            <img src="@Url.Content(Model.ComboImage)" class="img-rounded" style="width:500px;" />
         </dd>
     </dl>
 </div>

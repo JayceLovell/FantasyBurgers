@@ -31,7 +31,7 @@
             @Html.DisplayFor(modelItem => item.ComboPrice)
         </td>
         <td>
-            @Html.ActionLink("Details", "Details", new { id=item.ComboId })
+            @Html.ActionLink("Details", "Details", new { id=item.ComboId }, new { @class = "btn btn-success" })
         </td>
     </tr>
 }

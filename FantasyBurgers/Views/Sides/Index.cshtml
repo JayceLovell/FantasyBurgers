@@ -31,7 +31,7 @@
             @Html.DisplayFor(modelItem => item.SidePrice)
         </td>
         <td>
-            @Html.ActionLink("Details", "Details", new { id=item.SideId })
+            @Html.ActionLink("Details", "Details", new { id=item.SideId }, new { @class = "btn btn-success" })
         </td>
     </tr>
 }

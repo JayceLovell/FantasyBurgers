@@ -34,12 +34,8 @@
             @Html.DisplayFor(model => model.BurgerPrice)
         </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.BurgerImage)
-        </dt>
-
         <dd>
-            <img src="@Url.Content(Model.BurgerImage)" />
+            <img src="@Url.Content(Model.BurgerImage)" class="img-rounded" style="width:500px;" />
         </dd>
 
     </dl>
