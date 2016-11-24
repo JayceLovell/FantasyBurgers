@@ -37,8 +37,8 @@ textarea {
 .carousel {
     position: absolute;
     top: 0px;
-    padding-left: 130px;
-    padding-right: 130px;
+    padding-left: 74px;
+    padding-right: 73px;
     width:100%;
 }
 .nav.navbar-nav li a:hover{
@@ -57,4 +57,13 @@ textarea {
 img{
     max-width:500px;
     width:50%;
+}
+@media only screen and (max-width: 768px) {
+    .carousel {
+    position: absolute;
+    top: 0px;
+    padding-left: 50px;
+    padding-right: 50px;
+    width:100%;
+}
 }
