@@ -1,9 +1,9 @@
-﻿body {
+﻿/*body {
     padding-top: 50px;
     padding-bottom: 20px;
     background-image:url(Images/background.jpg);
     background-repeat:repeat;
-}
+}*/
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
@@ -54,10 +54,10 @@ textarea {
 .dropdown-menu{
     background: rgba(128, 128, 128, 0.55)
 }
-img{
+/*img{
     max-width:500px;
     width:50%;
-}
+}*/
 @media only screen and (max-width: 768px) {
     .carousel {
     position: absolute;
