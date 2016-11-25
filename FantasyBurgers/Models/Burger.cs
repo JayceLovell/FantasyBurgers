@@ -15,7 +15,7 @@ namespace FantasyBurgers.Models
         public string BurgerName { get; set; }
 
         [Required]
-        [StringLength(25)]
+        [StringLength(50)]
         [Display(Name = "Description")]
         public string BurgerShortDescription { get; set; }
 

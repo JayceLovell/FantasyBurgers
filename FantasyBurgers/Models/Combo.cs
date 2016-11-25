@@ -16,7 +16,7 @@ namespace FantasyBurgers.Models
         public string ComboName { get; set; }
 
         [Required]
-        [StringLength(25)]
+        [StringLength(50)]
         [Display(Name = "Description")]
         public string ComboShortDescription { get; set; }
 
