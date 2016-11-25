@@ -25,8 +25,6 @@ textarea {
 .carousel {
     position: absolute;
     top: 0px;
-    padding-left: 74px;
-    padding-right: 73px;
     width:100%;
 }
 .nav ul li a{
@@ -72,4 +70,8 @@ textarea {
     padding-right: 50px;
     width:100%;
 }
+}
+
+.carousel-indicators{
+    top:620px;
 }
