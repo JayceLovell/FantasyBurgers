@@ -211,7 +211,10 @@
     <Content Include="Content\Images\burgers04.jpg" />
     <Content Include="Content\Images\Burger_Brand_Logo.jpg" />
     <Content Include="Content\Images\CocoaOno.jpg" />
+    <Content Include="Content\Images\DefaultComboImage.jpg" />
+    <Content Include="Content\Images\DefaultSidesImage.jpg" />
     <Content Include="Content\Images\DrunkenDonuts.jpg" />
+    <Content Include="Content\Images\FantasyFries.jpg" />
     <Content Include="Content\Images\FunnelCakeFries.jpg" />
     <Content Include="Content\Images\Icons\burger_sandwich.png" />
     <Content Include="Content\Images\DefaultDessertImage.jpg" />
