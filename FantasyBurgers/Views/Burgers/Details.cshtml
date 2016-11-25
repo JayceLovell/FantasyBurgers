@@ -3,50 +3,51 @@
 @{
     ViewBag.Title = "Burger Details";
 }
+<div style="margin-top: 165px;">
+    <h2>Burger Details</h2>
 
-<h2>Burger Details</h2>
+    <div>
+        <h4>Burger</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.BurgerName)
+            </dt>
 
-<div>
-    <h4>Burger</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.BurgerName)
-        </dt>
+            <dd>
+                @Html.DisplayFor(model => model.BurgerName)
+            </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.BurgerName)
-        </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.BurgerLongDescription)
+            </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.BurgerLongDescription)
-        </dt>
+            <dd>
+                @Html.DisplayFor(model => model.BurgerLongDescription)
+            </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.BurgerLongDescription)
-        </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.BurgerPrice)
+            </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.BurgerPrice)
-        </dt>
+            <dd>
+                @Html.DisplayFor(model => model.BurgerPrice)
+            </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.BurgerPrice)
-        </dd>
+            <dd>
+                <img src="@Url.Content(Model.BurgerImage)" class="img-rounded detailsimages" />
+            </dd>
 
-        <dd>
-            <img src="@Url.Content(Model.BurgerImage)" class="img-rounded"/>
-        </dd>
-
-    </dl>
+        </dl>
+    </div>
+    <p>
+        @if (HttpContext.Current.User.IsInRole("Admin"))
+        {
+            @Html.ActionLink("Back to List", "Admin")
+        }
+        else
+        {
+            @Html.ActionLink("Back to List", "Index")
+        }
+    </p>
 </div>
-<p>
-    @if (HttpContext.Current.User.IsInRole("Admin"))
-    {
-        @Html.ActionLink("Back to List", "Admin")
-    }
-    else
-    {
-        @Html.ActionLink("Back to List", "Index")
-    }
-</p>

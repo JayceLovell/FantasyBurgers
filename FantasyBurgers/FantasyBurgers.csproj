@@ -204,7 +204,6 @@
     <Content Include="Content\flexslider.css" />
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
-    <Content Include="Content\Images\background.jpg" />
     <Content Include="Content\Images\BlueBerrySmoothie.jpg" />
     <Content Include="Content\Images\burgers01.JPG" />
     <Content Include="Content\Images\burgers02.JPG" />
@@ -323,6 +322,7 @@
     <Content Include="fonts\fontawesome-webfont.ttf" />
     <Content Include="fonts\fontawesome-webfont.eot" />
     <Content Include="images\Thumbs.db" />
+    <None Include="Documentation.doc" />
     <None Include="Scripts\jquery-2.2.4.intellisense.js" />
     <Content Include="Scripts\jquery-2.2.4.js" />
     <Content Include="Scripts\jquery-2.2.4.min.js" />

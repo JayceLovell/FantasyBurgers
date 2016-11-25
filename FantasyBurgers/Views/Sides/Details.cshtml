@@ -4,45 +4,47 @@
     ViewBag.Title = "Side Details";
 }
 
-<h2>Side Details</h2>
+<div style="margin-top: 165px;">
+    <h2>Side Details</h2>
 
-<div>
-    <h4>Side</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.SideName)
-        </dt>
+    <div>
+        <h4>Side</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.SideName)
+            </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.SideName)
-        </dd>
+            <dd>
+                @Html.DisplayFor(model => model.SideName)
+            </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.SideLongDescription)
-        </dt>
+            <dt>
+                @Html.DisplayNameFor(model => model.SideLongDescription)
+            </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.SideLongDescription)
-        </dd>
+            <dd>
+                @Html.DisplayFor(model => model.SideLongDescription)
+            </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.SidePrice)
-        </dt>
+            <dt>
+                @Html.DisplayNameFor(model => model.SidePrice)
+            </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.SidePrice)
-        </dd>
+            <dd>
+                @Html.DisplayFor(model => model.SidePrice)
+            </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.SideImage)
-        </dt>
+            <dt>
+                @Html.DisplayNameFor(model => model.SideImage)
+            </dt>
 
-        <dd>
-            <img src="@Url.Content(Model.SideImage)" class="img-rounded"/>
-        </dd>
-    </dl>
+            <dd>
+                <img src="@Url.Content(Model.SideImage)" class="img-rounded detailsimages" />
+            </dd>
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Back to List", "Admin")
+    </p>
 </div>
-<p>
-    @Html.ActionLink("Back to List", "Admin")
-</p>

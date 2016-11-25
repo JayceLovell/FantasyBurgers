@@ -4,42 +4,51 @@
     ViewBag.Title = "Drink Details";
 }
 
-<h2>Drink Details</h2>
+<div style="margin-top: 165px;">
+    <h2>Drink Details</h2>
 
-<div>
-    <h4>Drink</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Drink1)
-        </dt>
+    <div>
+        <h4>Drink</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Drink1)
+            </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Drink1)
-        </dd>
+            <dd>
+                @Html.DisplayFor(model => model.Drink1)
+            </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.DrinkLongDescription)
-        </dt>
+            <dt>
+                @Html.DisplayNameFor(model => model.DrinkLongDescription)
+            </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.DrinkLongDescription)
-        </dd>
+            <dd>
+                @Html.DisplayFor(model => model.DrinkLongDescription)
+            </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.DrinkPrice)
-        </dt>
+            <dt>
+                @Html.DisplayNameFor(model => model.DrinkPrice)
+            </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.DrinkPrice)
-        </dd>
+            <dd>
+                @Html.DisplayFor(model => model.DrinkPrice)
+            </dd>
 
 
-        <dd>
-            <img src="@Url.Content(Model.DrinkImage)" class="img-rounded"/>
-        </dd>
-    </dl>
+            <dd>
+                <img src="@Url.Content(Model.DrinkImage)" class="img-rounded detailsimages" />
+            </dd>
+        </dl>
+    </div>
+    <p>
+        @if (HttpContext.Current.User.IsInRole("Admin"))
+        {
+            @Html.ActionLink("Back to List", "Admin")
+        }
+        else
+        {
+            @Html.ActionLink("Back to List", "Index")
+        }
+    </p>
 </div>
-<p>
-    @Html.ActionLink("Back to List", "Admin")
-</p>

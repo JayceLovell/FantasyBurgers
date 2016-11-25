@@ -3,42 +3,50 @@
 @{
     ViewBag.Title = "Combo Details";
 }
+<div style="margin-top: 165px;">
+    <h2>Combo Details</h2>
 
-<h2>Combo Details</h2>
+    <div>
+        <h4>Combo</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.ComboName)
+            </dt>
 
-<div>
-    <h4>Combo</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.ComboName)
-        </dt>
+            <dd>
+                @Html.DisplayFor(model => model.ComboName)
+            </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.ComboName)
-        </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.ComboLongDescription)
+            </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.ComboLongDescription)
-        </dt>
+            <dd>
+                @Html.DisplayFor(model => model.ComboLongDescription)
+            </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.ComboLongDescription)
-        </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.ComboPrice)
+            </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.ComboPrice)
-        </dt>
+            <dd>
+                @Html.DisplayFor(model => model.ComboPrice)
+            </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.ComboPrice)
-        </dd>
-
-        <dd>
-            <img src="@Url.Content(Model.ComboImage)" class="img-rounded"/>
-        </dd>
-    </dl>
+            <dd>
+                <img src="@Url.Content(Model.ComboImage)" class="img-rounded detailsimages" />
+            </dd>
+        </dl>
+    </div>
+    <p>
+        @if (HttpContext.Current.User.IsInRole("Admin"))
+        {
+            @Html.ActionLink("Back to List", "Admin")
+        }
+        else
+        {
+            @Html.ActionLink("Back to List", "Index")
+        }
+    </p>
 </div>
-<p>
-    @Html.ActionLink("Back to List", "Admin")
-</p>

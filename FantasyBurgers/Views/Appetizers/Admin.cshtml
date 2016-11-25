@@ -3,43 +3,45 @@
 @{
     ViewBag.Title = "Admin Appetizer";
 }
+<div style="margin-top: 165px;">
+    <h2>Admin Appetizer</h2>
 
-<h2>Admin Appetizer</h2>
+    <p>
+        @Html.ActionLink("Create New Appetizer", "Create")
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.AppetizerName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AppetizerShortDescription)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AppetizerPrice)
+            </th>
+            <th></th>
+        </tr>
 
-<p>
-    @Html.ActionLink("Create New Appetizer", "Create")
-</p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.AppetizerName)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.AppetizerShortDescription)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.AppetizerPrice)
-        </th>
-        <th></th>
-    </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AppetizerName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AppetizerShortDescription)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AppetizerPrice)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.AppetizerId }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.AppetizerId }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.AppetizerId })
+                </td>
+            </tr>
+        }
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.AppetizerName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.AppetizerShortDescription)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.AppetizerPrice)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.AppetizerId }) |
-            @Html.ActionLink("Details", "Details", new { id=item.AppetizerId }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.AppetizerId })
-        </td>
-    </tr>
-}
-
-</table>
+    </table>
+</div>
