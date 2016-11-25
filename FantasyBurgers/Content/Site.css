@@ -32,6 +32,7 @@ textarea {
 .nav.navbar-nav li a:hover{
     background-color:black;
     color:white;
+    border-radius:100px;
 }
 .body-content{
     background-color:rgba(128, 128, 128, 0.45);
