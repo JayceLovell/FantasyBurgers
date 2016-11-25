@@ -226,9 +226,9 @@
     <Content Include="Content\Images\Icons\aboutUs.png" />
     <Content Include="Content\Images\MashedPotatoes.jpg" />
     <Content Include="Content\Images\MessyCookie.jpg" />
-    <Content Include="Content\Images\MixedVegetables.jpeg" />
-    <Content Include="Content\Images\PastaSalad.jpeg" />
-    <Content Include="Content\Images\PotatoSalad.jpeg" />
+    <Content Include="Content\Images\MixedVegetables.jpg" />
+    <Content Include="Content\Images\PastaSalad.jpg" />
+    <Content Include="Content\Images\PotatoSalad.jpg" />
     <Content Include="Content\Images\RoastedPotatoes.jpg" />
     <Content Include="Content\Images\selectimage.jpg" />
     <Content Include="Content\Images\KaleSmoothie.jpg" />
