@@ -29,10 +29,17 @@ textarea {
     padding-right: 73px;
     width:100%;
 }
+.nav ul li a{
+    text-decoration:none;
+    text-align: center;
+}
 .nav.navbar-nav li a:hover{
-    background-color:black;
     color:white;
     border-radius:100px;
+    background-image:url(Images/selectimage.jpg);
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
 }
 .body-content{
     background-color:rgba(128, 128, 128, 0.45);
