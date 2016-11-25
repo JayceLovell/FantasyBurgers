@@ -41,6 +41,14 @@ textarea {
     background-size:cover;
     background-repeat:no-repeat;
 }
+.nav.navbar-nav li a:focus{
+    color:white;
+    border-radius:100px;
+    background-image:url(Images/selectimage.jpg);
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+}
 .body-content{
     background-color:rgba(128, 128, 128, 0.45);
     border:thin;
