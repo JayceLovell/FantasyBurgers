@@ -1,4 +1,16 @@
 
+/*
+    File Name: Site.css
+    Authors: Sahil Mahajan
+             Waynell Lovell
+             Anmol Sharma
+    Website Name: fantasyburgers.azurewebsites.net
+    File Description: Custom Css file to do custom editing for the website.
+*/
+
+
+
+
 /*=================================
 ||			Owl Carousel
 ==================================*/
