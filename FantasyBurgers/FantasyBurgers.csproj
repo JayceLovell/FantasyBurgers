@@ -206,11 +206,6 @@
     <Content Include="Content\flexslider.css" />
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
-    <Content Include="Content\Images\1.jpg" />
-    <Content Include="Content\Images\2.jpg" />
-    <Content Include="Content\Images\3.jpg" />
-    <Content Include="Content\Images\4.jpg" />
-    <Content Include="Content\Images\About-C-bg.jpg" />
     <Content Include="Content\Images\aboutUs.jpg" />
     <Content Include="Content\Images\beer-bg1.png" />
     <Content Include="Content\Images\BlueBerrySmoothie.jpg" />
@@ -218,8 +213,6 @@
     <Content Include="Content\Images\bread-bg2.png" />
     <Content Include="Content\Images\burger002.jpg" />
     <Content Include="Content\Images\burgers01.JPG" />
-    <Content Include="Content\Images\burgers02.JPG" />
-    <Content Include="Content\Images\burgers03.JPG" />
     <Content Include="Content\Images\burgers04.jpg" />
     <Content Include="Content\Images\Burger_Brand_Logo.jpg" />
     <Content Include="Content\Images\cercle1.png" />
@@ -303,7 +296,6 @@
     <Content Include="fonts\fontawesome-webfont.woff" />
     <Content Include="fonts\fontawesome-webfont.ttf" />
     <Content Include="fonts\fontawesome-webfont.eot" />
-    <None Include="Documentation.doc" />
     <None Include="Scripts\jquery-2.2.4.intellisense.js" />
     <Content Include="Scripts\jquery-1.11.2.min.js" />
     <Content Include="Scripts\jquery-2.2.4.js" />
