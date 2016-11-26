@@ -244,7 +244,9 @@ p {
 }
 .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover
 {
-	color: #fff;
+	color: #000;
+    font-weight: bold;
+    
 }
 .navbar-default .navbar-toggle
 {
@@ -395,13 +397,12 @@ nav.shrink .navbar-toggle {
 /*=================================================
 ||				6. About us
 ==================================================*/
-.about-bg
-{
-	background: url('../images/About-C-bg.jpg');
-	background-repeat: no-repeat;
-	background-size: 85%;
-  	background-position-x: 15%;
-  	background-position-y: 80%;
+.about-bg {
+    background: url('../content/images/aboutUs.jpg');
+    background-repeat: no-repeat;
+    background-size: 85%;
+    background-position-x: 15%;
+    background-position-y: 80%;
 }
 #about 
 {
@@ -415,7 +416,7 @@ nav.shrink .navbar-toggle {
 ==================================================*/
 .great-place-to-enjoy .section-bg
 {
-	background-image: url('../content/images/GPtE-bg.jpg');
+	background-image: url('../content/images/enjoyBurger.jpg');
 }
 /*=================================================
 ||				9. Our Beer
@@ -454,7 +455,7 @@ nav.shrink .navbar-toggle {
 	background-repeat: no-repeat, no-repeat;
 	background-size: 300px,240px;*/
 
-	background: url("../images/bread-bg1.png"), url("../images/bread-bg2.png");
+	background: url("../content/images/bread-bg1.png"), url("../content/images/bread-bg2.png");
     background-repeat: no-repeat, no-repeat;
     background-position: 51% 58%, 75% 58%;
     background-size: 300px 300px, 240px 240px;
