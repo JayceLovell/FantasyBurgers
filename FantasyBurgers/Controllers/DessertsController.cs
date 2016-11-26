@@ -61,7 +61,7 @@ namespace FantasyBurgers.Controllers
             {
                 db.Desserts.Add(dessert);
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("Admin");
             }
 
             return View(dessert);
@@ -95,7 +95,7 @@ namespace FantasyBurgers.Controllers
             {
                 db.Entry(dessert).State = EntityState.Modified;
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("Admin");
             }
             return View(dessert);
         }
@@ -125,7 +125,7 @@ namespace FantasyBurgers.Controllers
             Dessert dessert = db.Desserts.Find(id);
             db.Desserts.Remove(dessert);
             db.SaveChanges();
-            return RedirectToAction("Index");
+            return RedirectToAction("Admin");
         }
         [Authorize(Roles = "Admin")]
         protected override void Dispose(bool disposing)

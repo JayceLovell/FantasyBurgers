@@ -60,7 +60,7 @@ namespace FantasyBurgers.Controllers
             {
                 db.Combos.Add(combo);
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("Admin");
             }
 
             return View(combo);
@@ -94,7 +94,7 @@ namespace FantasyBurgers.Controllers
             {
                 db.Entry(combo).State = EntityState.Modified;
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("Admin");
             }
             return View(combo);
         }
@@ -124,7 +124,7 @@ namespace FantasyBurgers.Controllers
             Combo combo = db.Combos.Find(id);
             db.Combos.Remove(combo);
             db.SaveChanges();
-            return RedirectToAction("Index");
+            return RedirectToAction("Admin");
         }
         [Authorize(Roles = "Admin")]
         protected override void Dispose(bool disposing)
