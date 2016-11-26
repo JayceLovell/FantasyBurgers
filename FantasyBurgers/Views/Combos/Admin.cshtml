@@ -4,7 +4,6 @@
     ViewBag.Title = "Admin";
 }
 <div style="margin-top: 165px;">
-    <h2>Admin</h2>
 
     <p>
         @Html.ActionLink("Create New Combo", "Create")
@@ -36,9 +35,9 @@
                     @Html.DisplayFor(modelItem => item.ComboPrice)
                 </td>
                 <td>
-                    @Html.ActionLink("Edit", "Edit", new { id = item.ComboId }) |
-                    @Html.ActionLink("Details", "Details", new { id = item.ComboId }) |
-                    @Html.ActionLink("Delete", "Delete", new { id = item.ComboId })
+                    @Html.ActionLink("Edit", "Edit", new { id = item.ComboId }, new { @class = "btn btn-warning btn-sm" }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.ComboId }, new { @class = "btn btn-success btn-sm" }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.ComboId }, new { @class = "btn btn-danger btn-sm" })
                 </td>
             </tr>
         }

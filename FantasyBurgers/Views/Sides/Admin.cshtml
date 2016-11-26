@@ -37,9 +37,9 @@
                     @Html.DisplayFor(modelItem => item.SidePrice)
                 </td>
                 <td>
-                    @Html.ActionLink("Edit", "Edit", new { id = item.SideId }) |
-                    @Html.ActionLink("Details", "Details", new { id = item.SideId }) |
-                    @Html.ActionLink("Delete", "Delete", new { id = item.SideId })
+                    @Html.ActionLink("Edit", "Edit", new { id = item.SideId }, new { @class = "btn btn-warning btn-sm" }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.SideId }, new { @class = "btn btn-success btn-sm" }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.SideId }, new { @class = "btn btn-danger btn-sm" })
                 </td>
             </tr>
         }

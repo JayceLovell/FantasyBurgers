@@ -4,8 +4,6 @@
     ViewBag.Title = "Admin Appetizer";
 }
 <div style="margin-top: 165px;">
-    <h2>Admin Appetizer</h2>
-
     <p>
         @Html.ActionLink("Create New Appetizer", "Create")
     </p>
@@ -36,9 +34,9 @@
                     @Html.DisplayFor(modelItem => item.AppetizerPrice)
                 </td>
                 <td>
-                    @Html.ActionLink("Edit", "Edit", new { id = item.AppetizerId }) |
-                    @Html.ActionLink("Details", "Details", new { id = item.AppetizerId }) |
-                    @Html.ActionLink("Delete", "Delete", new { id = item.AppetizerId })
+                    @Html.ActionLink("Edit", "Edit", new { id = item.AppetizerId }, new { @class = "btn btn-warning btn-sm" }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.AppetizerId }, new { @class = "btn btn-success btn-sm" }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.AppetizerId }, new { @class = "btn btn-danger btn-sm" })
                 </td>
             </tr>
         }

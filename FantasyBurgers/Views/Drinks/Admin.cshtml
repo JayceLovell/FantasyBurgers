@@ -5,7 +5,6 @@
 }
 
 <div style="margin-top: 165px;">
-    <h2>Drinks Admin</h2>
 
     <p>
         @Html.ActionLink("Create New Drink", "Create")
@@ -37,9 +36,9 @@
                     @Html.DisplayFor(modelItem => item.DrinkPrice)
                 </td>
                 <td>
-                    @Html.ActionLink("Edit", "Edit", new { id = item.DrinkId }) |
-                    @Html.ActionLink("Details", "Details", new { id = item.DrinkId }) |
-                    @Html.ActionLink("Delete", "Delete", new { id = item.DrinkId })
+                    @Html.ActionLink("Edit", "Edit", new { id = item.DrinkId }, new { @class = "btn btn-warning btn-sm" }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.DrinkId }, new { @class = "btn btn-success btn-sm" }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.DrinkId }, new { @class = "btn btn-danger btn-sm" })
                 </td>
             </tr>
         }
