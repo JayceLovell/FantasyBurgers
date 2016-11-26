@@ -19,16 +19,5 @@ namespace FantasyBurgers
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
         }
-        /* Saved for later when we want to change start page
-         * public static void RegisterRoutes(RouteCollection routes)
-        {
-            routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
-
-            routes.MapRoute(
-                name: "Default",
-                url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Store", action = "Index", id = UrlParameter.Optional }
-            );
-        }*/
     }
 }
