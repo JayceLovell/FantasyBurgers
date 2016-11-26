@@ -1,4 +1,14 @@
-﻿
+﻿/*
+    File Name: Site.css
+    Authors: Sahil Mahajan
+             Waynell Lovell
+             Anmol Sharma
+    Website Name: fantasyburgers.azurewebsites.net
+    File Description: Custom Css file to do custom editing for the website.
+*/
+
+
+
 /* Override the default bootstrap behavior where horizontal description lists 
    will truncate terms that are too long to fit in the left column 
 */
@@ -63,15 +73,6 @@ textarea {
 .detailsimages{
     max-width:500px;
     width:50%;
-}
-@media only screen and (max-width: 768px) {
-    .carousel {
-    position: absolute;
-    top: 0px;
-    padding-left: 50px;
-    padding-right: 50px;
-    width:100%;
-}
 }
 
 .carousel-indicators{

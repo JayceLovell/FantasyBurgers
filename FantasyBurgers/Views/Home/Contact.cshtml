@@ -1,4 +1,14 @@
-﻿@{
+﻿
+<!--
+    File Name: Contact.cshtml
+    Authors: Sahil Mahajan
+             Waynell Lovell
+             Anmol Sharma
+    Website Name: fantasyburgers.azurewebsites.net
+    File Description: Contact US page for the contact information of our company.
+ -->
+
+@{
     ViewBag.Title = "Contact";
 }
 
@@ -68,7 +78,7 @@
                                 </div>
                                 <div id="reservationFormResponse"></div>
                                 <div class="col-md-12 col-sm-12">
-                                    <input type="submit" id="rfsubmit" name="submit" class="btn btn-reservation" value="Contact Us">
+                                    @Html.ActionLink("Contact", "Contact",null, new { @class = "btn btn-reservation" })
                                 </div>
 
                             </div>
