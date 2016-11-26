@@ -173,7 +173,6 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AppetizersController.cs" />
     <Compile Include="Controllers\BurgersController.cs" />
-    <Compile Include="Controllers\CombosController.cs" />
     <Compile Include="Controllers\DessertsController.cs" />
     <Compile Include="Controllers\DrinksController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -185,7 +184,6 @@
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Appetizer.cs" />
     <Compile Include="Models\Burger.cs" />
-    <Compile Include="Models\Combo.cs" />
     <Compile Include="Models\Dessert.cs" />
     <Compile Include="Models\Drink.cs" />
     <Compile Include="Models\FantasyBurgersContext.cs" />
@@ -226,7 +224,6 @@
     <Content Include="Content\Images\cercle3.png" />
     <Content Include="Content\Images\CocoaOno.jpg" />
     <Content Include="Content\Images\CornOnTheCob.jpg" />
-    <Content Include="Content\Images\DefaultComboImage.jpg" />
     <Content Include="Content\Images\DefaultSidesImage.jpg" />
     <Content Include="Content\Images\DrunkenDonuts.jpg" />
     <Content Include="Content\Images\enjoyBurger.jpg" />
@@ -384,12 +381,6 @@
     <Content Include="Views\Desserts\Edit.cshtml" />
     <Content Include="Views\Desserts\Delete.cshtml" />
     <Content Include="Views\Desserts\Admin.cshtml" />
-    <Content Include="Views\Combos\Create.cshtml" />
-    <Content Include="Views\Combos\Delete.cshtml" />
-    <Content Include="Views\Combos\Details.cshtml" />
-    <Content Include="Views\Combos\Edit.cshtml" />
-    <Content Include="Views\Combos\Index.cshtml" />
-    <Content Include="Views\Combos\Admin.cshtml" />
     <Content Include="Views\Sides\Create.cshtml" />
     <Content Include="Views\Sides\Delete.cshtml" />
     <Content Include="Views\Sides\Details.cshtml" />

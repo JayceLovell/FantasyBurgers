@@ -14,7 +14,6 @@ namespace FantasyBurgers.Models
 
         public virtual DbSet<Appetizer> Appetizers { get; set; }
         public virtual DbSet<Burger> Burgers { get; set; }
-        public virtual DbSet<Combo> Combos { get; set; }
         public virtual DbSet<Dessert> Desserts { get; set; }
         public virtual DbSet<Drink> Drink { get; set; }
         public virtual DbSet<Side> Sides { get; set; }
@@ -27,10 +26,6 @@ namespace FantasyBurgers.Models
 
             modelBuilder.Entity<Burger>()
                 .Property(e => e.BurgerPrice)
-                .HasPrecision(10, 2);
-
-            modelBuilder.Entity<Combo>()
-                .Property(e => e.ComboPrice)
                 .HasPrecision(10, 2);
 
             modelBuilder.Entity<Dessert>()
