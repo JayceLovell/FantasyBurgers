@@ -519,7 +519,7 @@ nav.shrink .navbar-toggle {
 ==================================================*/
 .reserve .section-bg
 {
-	background-image: url('../images/RaT-bg.jpg');
+	background-image: url('../content/images/RaT-bg.jpg');
 }
 
 .reservation .section-content
@@ -610,42 +610,42 @@ nav.shrink .navbar-toggle {
 
 .fb
 {
-	background: url(../images/social/facebook_color.png);
+	background: url(../content/images/social/facebook_color.png);
 }
 
 .fb:hover
 {
-	background: url(../images/social/facebook_black.png);
+	background: url(../content/images/social/facebook_black.png);
 }
 
 .twit {
-	background: url(../images/social/twitter_color.png);
+	background: url(../content/images/social/twitter_color.png);
 }
 
 .twit:hover {
-	background: url(../images/social/twitter_black.png);
+	background: url(../content/images/social/twitter_black.png);
 }
 
 .g-plus {
-	background: url(../images/social/g-plus_color.png);
+	background: url(../content/images/social/g-plus_color.png);
 }
 
 .g-plus:hover {
-	background: url(../images/social/g-plus_black.png);
+	background: url(../content/images/social/g-plus_black.png);
 }
 
 .link {
-	background: url(../images/social/linkedin_color.png);
+	background: url(../content/images/social/linkedin_color.png);
 }
 
 .link:hover {
-	background: url(../images/social/linkedin_black.png);
+	background: url(../content/images/social/linkedin_black.png);
 }
 
 #map-canvas {
     width: 100%;
     height: 350px;
-    background: url(../../../Content/Images/map_image.jpg);
+    background: url(../Content/Images/map_image2.jpg);
     background-size:cover;
 }
 

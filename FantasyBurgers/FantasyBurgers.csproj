@@ -248,6 +248,7 @@
     <Content Include="Content\Images\Icons\phone_icon.png" />
     <Content Include="Content\Images\Icons\reserve_black.png" />
     <Content Include="Content\Images\Icons\reserve_color.png" />
+    <Content Include="Content\Images\map_image2.jpg" />
     <Content Include="Content\Images\MashedPotatoes.jpg" />
     <Content Include="Content\Images\MessyCookie.jpg" />
     <Content Include="Content\Images\MixedVegetables.jpg" />
@@ -300,7 +301,6 @@
     <Content Include="Scripts\jquery-1.11.2.min.js" />
     <Content Include="Scripts\jquery-2.2.4.js" />
     <Content Include="Scripts\jquery-2.2.4.min.js" />
-    <Content Include="Scripts\jquery-2.2.4.min.map" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
     <Content Include="Scripts\jquery.flexslider.min.js" />
     <Content Include="Scripts\jquery.hoverdir.js" />
