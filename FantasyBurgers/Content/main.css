@@ -635,10 +635,12 @@ nav.shrink .navbar-toggle {
 }
 
 .link {
+    margin-left: -554px;
 	background: url(../content/images/social/linkedin_color.png);
 }
 
 .link:hover {
+    margin-left: -554px;
 	background: url(../content/images/social/linkedin_black.png);
 }
 
